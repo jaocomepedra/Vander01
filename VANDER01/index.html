@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Iori Nogaroli | Dev & Criativo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+    <!-- Cursor Personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Carregando portfólio...</p>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Felipe</span>
+                <span class="logo-dot">.</span>
+            </a>
+            
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <span class="nav-number">01</span>
+                            <span class="nav-text">Início</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <span class="nav-number">02</span>
+                            <span class="nav-text">Sobre</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <span class="nav-number">03</span>
+                            <span class="nav-text">Habilidades</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">
+                            <span class="nav-number">04</span>
+                            <span class="nav-text">Projetos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <span class="nav-number">05</span>
+                            <span class="nav-text">Contato</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-social">
+                <a href="https://github.com" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <button class="menu-toggle">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>👋 Olá, eu sou</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="title-word">Felipe</span>
+                        <span class="title-highlight">Iori</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="title-word">Nogaroli</span>
+                    </span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <div class="typewriter">
+                        <span class="type-text">Desenvolvedor Web & UI/UX</span>
+                    </div>
+                </div>
+                
+                <p class="hero-description">
+                    <span class="highlight">18 anos</span> • 
+                    <span class="highlight">Campo Mourão, PR</span> • 
+                    <span class="highlight">Nascimento: 20/11/2007</span>
+                    <br>
+                    Apaixonado por criar experiências digitais que unem tecnologia e criatividade.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-text">Ver Projetos</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span class="btn-text">Contato</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-title">felipe.js</div>
+                        </div>
+                        <div class="code-content">
+                            <pre><code class="javascript">
+// Felipe Iori Nogaroli
+// Desenvolvedor Web
+
+const dev = {
+    nome: "Felipe Iori Nogaroli",
+    idade: 18,
+    localizacao: "Campo Mourão, PR",
+    nascimento: "2007-11-20",
+    
+    habilidades: [
+        "JavaScript", "React", "Node.js",
+        "UI/UX Design", "Figma", "Git"
+    ],
+    
+    projetos: 12,
+    experiencia: "2 anos",
+    
+    bio() {
+        return `Desenvolvedor apaixonado por criar
+                soluções inovadoras com código limpo
+                e design moderno.`;
+    }
+};
+
+dev.bio();
+                            </code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="float-element el1">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="float-element el2">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="float-element el3">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="float-element el4">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-down">
+                <span class="scroll-text">Scroll</span>
+                <span class="scroll-line"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-number">01</span>
+                <span class="title-text">Sobre Mim</span>
+            </h2>
+            <p class="section-subtitle">Conheça minha jornada e paixões</p>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Nasci em <strong>20 de novembro de 2007</strong> em Campo Mourão, Paraná. Desde criança, sempre fui fascinado por tecnologia e como as coisas funcionam por trás das telas.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        Aos 16 anos, descobri a programação e foi amor à primeira vista. Comecei com HTML e CSS básicos, e rapidamente me aventurei pelo JavaScript e desenvolvimento web moderno.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        Hoje, com 18 anos, busco constantemente aprender novas tecnologias e frameworks. Acredito que a melhor forma de aprender é criando, por isso estou sempre desenvolvendo novos projetos pessoais.
+                    </p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="18">0</div>
+                            <div class="stat-label">Anos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="12">0</div>
+                            <div class="stat-label">Projetos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="2">0</div>
+                            <div class="stat-label">Anos de Exp</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="100">0</div>
+                            <div class="stat-label">% Dedicado</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-timeline">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2007</div>
+                        <div class="timeline-content">
+                            <h3>Nascimento</h3>
+                            <p>Nascido em Campo Mourão, Paraná</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <h3>Primeiro Código</h3>
+                            <p>Comecei a aprender programação</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>Primeiro Projeto</h3>
+                            <p>Desenvolvi meu primeiro site completo</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h3>Portfólio</h3>
+                            <p>Desenvolvendo projetos mais complexos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-number">02</span>
+                <span class="title-text">Habilidades</span>
+            </h2>
+            <p class="section-subtitle">Tecnologias e ferramentas que domino</p>
+        </div>
+        
+        <div class="skills-container">
+            <div class="skills-categories">
+                <!-- Frontend -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Design -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Design</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <div class="skill-info">
+                                <span class="skill-name">Adobe XD</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ferramentas -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Ferramentas</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Terminal</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-number">03</span>
+                <span class="title-text">Projetos</span>
+            </h2>
+            <p class="section-subtitle">Alguns dos meus trabalhos recentes</p>
+        </div>
+        
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Projeto 1 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tag">Web</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Portfólio Moderno</h3>
+                    <p class="project-description">
+                        Site portfólio responsivo com design moderno e animações suaves.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projeto 2 -->
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-figma"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tag">Design</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">UI Dashboard</h3>
+                    <p class="project-description">
+                        Dashboard administrativo com foco em experiência do usuário.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">UI Design</span>
+                        <span class="tech-tag">Prototyping</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projeto 3 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tag">Web</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-commerce UI</h3>
+                    <p class="project-description">
+                        Interface de loja virtual com carrinho de compras interativo.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Styled Components</span>
+                        <span class="tech-tag">Context API</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projeto 4 -->
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tag">Mobile</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">App de Tarefas</h3>
+                    <p class="project-description">
+                        Aplicativo mobile para gerenciamento de tarefas diárias.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Expo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="projects-more">
+            <a href="#" class="btn btn-outline">
+                <span class="btn-text">Ver Todos os Projetos</span>
+                <span class="btn-icon">
+                    <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-number">04</span>
+                <span class="title-text">Contato</span>
+            </h2>
+            <p class="section-subtitle">Vamos trabalhar juntos?</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Localização</h3>
+                        <p>Campo Mourão, Paraná</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Nascimento</h3>
+                        <p>20 de Novembro de 2007</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Idade</h3>
+                        <p>18 anos</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>contato@felipeiori.dev</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Seu Nome" required>
+                        <label for="name">Nome</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Seu Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <label for="message">Mensagem</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Enviar Mensagem</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Felipe</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                
+                <p class="footer-text">
+                    Desenvolvedor Web • 18 anos • Campo Mourão, PR
+                </p>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2023 Felipe Iori Nogaroli. Todos os direitos reservados.
+                </p>
+                <p class="copyright">
+                    Nascimento: 20/11/2007 • Desenvolvido com 💜 por Felipe
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+</html>
